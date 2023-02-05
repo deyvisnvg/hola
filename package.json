@@ -1,26 +1,38 @@
 {
-  "name": "projectunidad_backend",
+  "name": "projectprueba",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
     "build": "tsc",
+    "pre-prod": "npm run build",
+    "prepare": "npm run build",
     "start": "node dist/src/index.js",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/teamSilabuz/projectunidad_backend.git"
+    "url": "git+https://github.com/deyvisnvg/hola.git"
   },
-  "keywords": [],
+  "engines": {
+    "node": ">=16.18",
+    "npm": ">=8.18"
+  },
+  "keywords": [
+    "vercel-typescript-express-api",
+    "node",
+    "express",
+    "javascript",
+    "server"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/teamSilabuz/projectunidad_backend/issues"
+    "url": "https://github.com/deyvisnvg/hola/issues"
   },
-  "homepage": "https://github.com/teamSilabuz/projectunidad_backend#readme",
+  "homepage": "https://github.com/deyvisnvg/hola#readme",
   "devDependencies": {
     "@types/bcryptjs": "2.4.2",
     "@types/cors": "2.8.13",

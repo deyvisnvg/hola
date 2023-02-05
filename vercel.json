@@ -1,8 +1,17 @@
 {
-    "rewrites": [
+    "name": "projectprueba",
+    "version": 2,
+    "public": true,
+    "builds": [
         {
-            "source": "/src/(.*)",
-            "destination": "/src"
+            "src": "src/index.ts",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/src/index.ts"
         }
     ]
 }
