@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
     "dev": "nodemon",
-    "start": "node ./dist/src/index.js",
+    "build": "tsc",
+    "start": "node dist/src/index.js",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
