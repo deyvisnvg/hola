@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "develop -p $PORT",
+    "dev": "nodemon",
     "build": "tsc",
-    "start": "vercel dev",
+    "start": "tsc && node public/",
     "vercel-build": "prisma generate && prisma migrate deploy",
     "prisma:generate": "prisma generate",
     "deploy": "vercel deploy --prod",
