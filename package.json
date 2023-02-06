@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "develop -p $PORT",
     "build": "tsc",
-    "start": "tsc && node public/",
+    "start": "vercel dev",
+    "vercel-build": "prisma generate && prisma migrate deploy",
+    "prisma:generate": "prisma generate",
+    "deploy": "vercel deploy --prod",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
@@ -45,7 +48,8 @@
     "dotenv": "16.0.3",
     "express": "4.18.2",
     "jsonwebtoken": "9.0.0",
-    "twilio": "4.7.0"
+    "twilio": "4.7.0",
+    "vercel": "28.15.0"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
