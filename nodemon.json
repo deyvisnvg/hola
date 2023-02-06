@@ -2,8 +2,7 @@
   "watch": [
     "src"
   ],
-  "ext": "ts",
-  "execMap": {
-    "ts": "tsnd --transpile-only --respawn --ignore-watch node_modules ./src/index.ts"
-  }
+  "ext": ".ts",
+  "ignore": [],
+  "exec": "npx ts-node ./src/index.ts"
 }
