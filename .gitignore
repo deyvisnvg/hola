@@ -8,3 +8,5 @@ migrations
 package-lock.json
 dev.db
 dev.db-journal
+# Local Netlify folder
+.netlify

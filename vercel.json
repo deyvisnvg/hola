@@ -1,17 +1,16 @@
 {
-    "name": "projectprueba",
     "version": 2,
     "public": true,
     "builds": [
         {
-            "src": "src/index.ts",
+            "src": "./src/index.ts",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/src/index.ts"
+            "dest": "/"
         }
     ]
 }
