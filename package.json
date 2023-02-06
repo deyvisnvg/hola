@@ -5,13 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon --watch src --exec ts-node src/index.ts",
-    "pre-prod": "npm run build",
+    "dev": "nodemon",
     "start": "node dist/src/index.js",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "predeploy": "npm run build",
-    "deploy": "vercel --prod"
   },
   "repository": {
     "type": "git",
